@@ -3,44 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>AI French Poem Generator</title>
   </head>
   <body>
-    <header>
-      <h1>AI French Poem Generator</h1>
-    </header>
+    <div class="container">
+      <header>
+        <h1>AI French Poem Generator</h1>
+      </header>
 
-    <main>
-      <form>
-        <input
-          type="text"
-          placeholder="Enter the topic of the French poem"
-          autofocus
-          required
-          autocomplete="off"
-        />
-        <input type="submit" />
-      </form>
-      <div>
-        La tombe dit à la rose
-        <br />
-        Des pleurs dont l'aube t'arrose
-      </div>
-    </main>
+      <main>
+        <form id="poem-generator-form">
+          <input
+            type="text"
+            placeholder="Enter the topic of the French poem"
+            autofocus
+            required
+            autocomplete="off"
+            class="instructions"
+          />
+          <input type="submit" class="submit-button" />
+        </form>
+        <div class="poem" id="poem"></div>
+      </main>
 
-    <footer>
-      This AI project was coded by
-      <a href="https://github.com/MariedeWet/" target="_blank">Marie de Wet</a>
-      and is
-      <a href="https://github.com/MariedeWet/French-poems/" target="_blank">
-        open-sourced on GitHub</a
-      >
-      and is
-      <a href="https://timely-trifle-43292b.netlify.app/" target="_blank"
-        >hosted on Netlify</a
-      >.
-    </footer>
+      <footer>
+        This AI project was coded by
+        <a href="https://github.com/MariedeWet/" target="_blank"
+          >Marie de Wet</a
+        >
+        and is
+        <a href="https://github.com/MariedeWet/French-poems/" target="_blank">
+          open-sourced on GitHub</a
+        >
+        and is
+        <a href="https://timely-trifle-43292b.netlify.app/" target="_blank"
+          >hosted on Netlify</a
+        >.
+      </footer>
+    </div>
 
     <script src="src/index.js"></script>
   </body>
